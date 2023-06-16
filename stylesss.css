@@ -1,0 +1,35 @@
+.header {display:flex;align-items:center;text-align: center;flex-wrap: wrap;}
+.header img{flex-shrink: 0;}
+.header h1{margin:0;flex-grow: 1;font-size:3rem;z-index: 2;}
+.menu li{padding-top: 2%;list-style-type: none;}
+.menu {width: 20%;}
+a{color:white;}
+.menu {
+    background-color: black;
+    border-right: solid;
+    position: sticky;
+    top: 0;
+    height: 80vh;
+    overflow-y: auto;
+    border-color: white;
+    border-top: none;
+    border-width: 50px;
+  }
+  
+  .vertical-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .vertical-menu li {
+    padding-bottom: 5px;
+  }
+  
+  .vertical-menu li:last-child {
+    border-bottom: none;
+  }
+
+
+.navbar{background-color: white;}
+.navbar a{color:black;}

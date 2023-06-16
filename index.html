@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Tambahkan referensi ke Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Mengatur tampilan konten utama */
+    .main-content {
+      margin-top: 50px; /* Mengatur margin atas untuk menghindari tumpang tindih dengan navigasi di atas */
+      padding: 20px;
+    }
+    .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Sesuaikan tinggi header sesuai kebutuhan */
+    text-align: center;
+  }
+
+  /* Mengatur tampilan teks */
+  .header h3 {
+    margin: 0;
+    font-size: 5rem;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid bg-light py-3">
+    <div class="row">
+      <div class="col-2">
+       <a href="index.html"> <img src="logo.png" style="width: 10rem;" alt="Logo"></a>
+    </div>
+        <div class="col-10 header"><h3>CLUB MOTOR XYZ</h3></div>
+        
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <button class="navbar-toggler ml-auto d-block d-lg-none" type="button" data-toggle="collapse" data-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-left: 11%;" id="navbarNav">
+      <ul class="navbar-nav ml-5 ">
+        <li class="nav-item active px-5">
+          <a class="nav-link" href="#" onclick="loadPage('home.html')">Home</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#" onclick="loadPage('profile.html')">Profile</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#" onclick="loadPage('visi.html')">Visi & Misi</a>
+        </li>
+        <li class="nav-item active px-5">
+          <a class="nav-link" href="#" onclick="loadPage('produk.html')">Produk Kami</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#" onclick="loadPage('contact.html')">Kontak Kami</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link" href="#"onclick="loadPage('about.html')">About us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 d-none d-md-block bg-light sidebar sidebar-content" style="padding-bottom: 100%;">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item py-2">
+              <a class="nav-link active" href="#"onclick="loadPage('artikel.html')">Artikel</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#"onclick="loadPage('event.html')">Event</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#"onclick="loadPage('galeri.html')">Galery Foto</a>
+            </li>
+            <li class="nav-item py-2" >
+              <a class="nav-link active" href="#" onclick="loadPage('klien.html')">Klien kami</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#"onclick="loadPage('login.html')">Login</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#"onclick="loadPage('signup.html')">signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+          <iframe id="pageFrame" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    function loadPage(page) {
+      document.getElementById('pageFrame').src = page;
+    }
+  </script>
+  <!-- Tambahkan referensi ke Bootstrap JavaScript dan jQuery -->
+  <sciprt src="app.js"></sciprt>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
